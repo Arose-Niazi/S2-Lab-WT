@@ -14,7 +14,7 @@
         <!-- Button trigger modal -->
         <button
             type="button"
-            class="btn btn-primary btn-lg"
+            class="btn btn-outline-primary btn-lg"
             data-toggle="modal"
             data-target="#addModal"
         >
@@ -53,19 +53,23 @@
                                 id="title"
                                 aria-describedby="titleHelp"
                                 placeholder="Title of the Album"
+                                required
                             />
-                            <small id="titleHelp" class="form-text text-muted"
+                            <small
+                                id="titleHelp"
+                                class="form-text"
+                                style="color: grey"
                                 >Enter Title of the Album</small
                             >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="addBtn" class="btn btn-info">
+                        <button id="addBtn" class="btn btn-outline-info">
                             Add Album
                         </button>
                         <button
                             type="button"
-                            class="btn btn-secondary"
+                            class="btn btn-outline-secondary"
                             data-dismiss="modal"
                         >
                             Close
@@ -109,16 +113,23 @@
                                 id="updateTitle"
                                 aria-describedby="updateHelpId"
                                 placeholder=""
+                                required
                             />
+                            <small
+                                id="updateHelpId"
+                                class="form-text"
+                                style="color: grey"
+                                >Enter Title to Update</small
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="updateSave" class="btn btn-primary">
+                        <button id="updateSave" class="btn btn-outline-primary">
                             Update
                         </button>
                         <button
                             type="button"
-                            class="btn btn-secondary"
+                            class="btn btn-outline-secondary"
                             data-dismiss="modal"
                         >
                             Close
